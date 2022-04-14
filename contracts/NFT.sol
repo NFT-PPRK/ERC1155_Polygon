@@ -7,9 +7,13 @@ import "@openzeppelin/contracts/utils/Counters.sol";
 contract NFT is ERC1155 {
     using Counters for Counters.Counter;
     Counters.Counter private currentTokenId;
+    // ERC 721 Example code
     // constructor(string name, string symbol)
     // constructor("NFTTutorial", "NFT")
-    constructor() ERC1155("") {}
+
+    // ERC 1155 Example code 
+    // ERC1155("https://game.example/api/item/{id}.json") ERC 1155() ()안에 IFPS URL을 넣는데 아마도 나중에 있을 BaseToekn URL과 관계있을듯? 
+    constructor() ERC1155("") {} 
     
     function mintTo(address recipient)
         public
