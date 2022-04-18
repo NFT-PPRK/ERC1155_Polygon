@@ -15,9 +15,7 @@ contract NFT is ERC1155 {
 
     // ERC 1155 Example code 
     // ERC1155("https://game.example/api/item/{id}.json") ERC 1155() ()안에 IFPS URL을 넣는데 아마도 나중에 있을 BaseToekn URL과 관계있을듯? 
-    constructor() ERC1155("") {
-        baseTokenURI = "";
-    } 
+    constructor() ERC1155("") {} 
     
     function mintTo(address recipient)
         public
@@ -33,10 +31,10 @@ contract NFT is ERC1155 {
         //_safeMint(recipient, newItemId);
         return newItemId;
     }
-  /// @dev Returns an URI for a given token ID
-  function _baseURI() internal view virtual override returns (string memory) {
-    return baseTokenURI;
-  }
+  // /// @dev Returns an URI for a given token ID
+  // function _baseURI() internal view virtual override returns (string memory) {
+  //   return baseTokenURI;
+  // }
 
   /// @dev Sets the base token URI prefix.
   function setBaseTokenURI(string memory _baseTokenURI) public {
