@@ -1,4 +1,22 @@
 {
+    "attributes" : [
+       {
+          "trait_type" : "location",
+          "value" : "Seoul National University"
+       },
+       {
+          "trait_type" : "Weather",
+          "value" : "Cloudy"
+       },
+       {
+          "trait_type" : "With",
+          "value" : "Paprika Data lab"
+       },
+       {
+          "display_type" : "YearMonthDay",
+          "trait_type" : "2022-04-14"
+       }
+    ],
     "description" : "With paprika data lab",
     "external_url" : "https://example.com/?token_id=1",
     "image" : "https://bafybeifdw36ruajkqxtccwyuduzkapa2nb6a5ttzclnchdy2ybano4rhca.ipfs.nftstorage.link/?filename=1.jpg",
