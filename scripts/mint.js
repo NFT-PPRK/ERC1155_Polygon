@@ -16,7 +16,6 @@ task("set-base-token-uri", "Sets the base token URI for the deployed smart contr
 .addParam("baseUrl", "The base of the tokenURI endpoint to set")
 .setAction(async function (taskArguments, hre) {
     const contract = await getContract("NFT", hre);
-    console.log(contract)
     const transactionResponse = await contract.setBaseTokenURI(taskArguments.baseUrl, {
         gasLimit: 500_000,
     });
@@ -28,17 +27,12 @@ task("token-uri", "Fetches the token metadata for the given token ID")
 .addParam("tokenId", "The tokenID to fetch metadata for")
 .setAction(async function (taskArguments, hre) {
     const contract = await getContract("NFT", hre);
-    // const tokenUri = await contract.uri()
-
-        let response = await contract.tokenUri(taskArguments.tokenId
-            //     , {
-            //     gasLimit: 500_000,
-            // }
-            );
-        // response += `${taskArguments.tokenId}`
-            console.log(response)
+    const response = await contract.tokenUri(taskArguments.tokenId, {
+        gasLimit: 500_000,
+    });
+    
     const metadata_url = response;
-    // console.log(`Metadata URL: ${metadata_url}`);
+    console.log(`Metadata URL: ${metadata_url}`);
 
     const metadata = await fetch(metadata_url).then(res => res.json());
     console.log(`Metadata fetch response: ${JSON.stringify(metadata, null, 2)}`);
