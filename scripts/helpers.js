@@ -31,6 +31,8 @@ function getContract(contractName, hre) {
     return getContractAt(hre, contractName, getEnvVariable("NFT_CONTRACT_ADDRESS"), account);
 }
 
+
+
 module.exports = {
     getEnvVariable,
     getProvider,

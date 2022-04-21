@@ -1,9 +1,9 @@
 {
   "_format": "hh-sol-cache-2",
   "files": {
-    "C:\\Users\\TFG5076XG\\git\\ERC1155_Polygon3\\contracts\\NFT.sol": {
-      "lastModificationDate": 1650430313257,
-      "contentHash": "3eeab78411f0142c0f2150d48a1706db",
+    "C:\\Users\\TFG5076XG\\git\\ERC1155\\ERC1155_Polygon3\\contracts\\NFT.sol": {
+      "lastModificationDate": 1650521161998,
+      "contentHash": "daaf9ea8f6aa9bb40dfcb8106a887545",
       "sourceName": "contracts/NFT.sol",
       "solcConfig": {
         "version": "0.8.1",
@@ -34,6 +34,8 @@
         "@openzeppelin/contracts/token/ERC1155/extensions/IERC1155MetadataURI.sol",
         "@openzeppelin/contracts/utils/Counters.sol",
         "@openzeppelin/contracts/utils/Strings.sol",
+        "@openzeppelin/contracts/access/Ownable.sol",
+        "@openzeppelin/contracts/access/AccessControl.sol",
         "./StringsAction.sol"
       ],
       "versionPragmas": [
@@ -43,7 +45,7 @@
         "NFT"
       ]
     },
-    "C:\\Users\\TFG5076XG\\git\\ERC1155_Polygon3\\node_modules\\@openzeppelin\\contracts\\token\\ERC1155\\ERC1155.sol": {
+    "C:\\Users\\TFG5076XG\\git\\ERC1155\\ERC1155_Polygon3\\node_modules\\@openzeppelin\\contracts\\token\\ERC1155\\ERC1155.sol": {
       "lastModificationDate": 1650421385431,
       "contentHash": "1d68a32647e54f6acd6ff471d940ef4c",
       "sourceName": "@openzeppelin/contracts/token/ERC1155/ERC1155.sol",
@@ -85,7 +87,7 @@
         "ERC1155"
       ]
     },
-    "C:\\Users\\TFG5076XG\\git\\ERC1155_Polygon3\\node_modules\\@openzeppelin\\contracts\\token\\ERC1155\\IERC1155.sol": {
+    "C:\\Users\\TFG5076XG\\git\\ERC1155\\ERC1155_Polygon3\\node_modules\\@openzeppelin\\contracts\\token\\ERC1155\\IERC1155.sol": {
       "lastModificationDate": 1650421385561,
       "contentHash": "59e1bc5713fdebc7f821dc52f4d3e0ef",
       "sourceName": "@openzeppelin/contracts/token/ERC1155/IERC1155.sol",
@@ -122,7 +124,7 @@
         "IERC1155"
       ]
     },
-    "C:\\Users\\TFG5076XG\\git\\ERC1155_Polygon3\\node_modules\\@openzeppelin\\contracts\\token\\ERC1155\\extensions\\IERC1155MetadataURI.sol": {
+    "C:\\Users\\TFG5076XG\\git\\ERC1155\\ERC1155_Polygon3\\node_modules\\@openzeppelin\\contracts\\token\\ERC1155\\extensions\\IERC1155MetadataURI.sol": {
       "lastModificationDate": 1650421385563,
       "contentHash": "9148c2e10c4efb12c71a7f080da5559b",
       "sourceName": "@openzeppelin/contracts/token/ERC1155/extensions/IERC1155MetadataURI.sol",
@@ -159,7 +161,7 @@
         "IERC1155MetadataURI"
       ]
     },
-    "C:\\Users\\TFG5076XG\\git\\ERC1155_Polygon3\\node_modules\\@openzeppelin\\contracts\\utils\\Counters.sol": {
+    "C:\\Users\\TFG5076XG\\git\\ERC1155\\ERC1155_Polygon3\\node_modules\\@openzeppelin\\contracts\\utils\\Counters.sol": {
       "lastModificationDate": 1650421385419,
       "contentHash": "74654e3ae5d7f39555055dfe244dab7a",
       "sourceName": "@openzeppelin/contracts/utils/Counters.sol",
@@ -194,7 +196,7 @@
         "Counters"
       ]
     },
-    "C:\\Users\\TFG5076XG\\git\\ERC1155_Polygon3\\node_modules\\@openzeppelin\\contracts\\utils\\Strings.sol": {
+    "C:\\Users\\TFG5076XG\\git\\ERC1155\\ERC1155_Polygon3\\node_modules\\@openzeppelin\\contracts\\utils\\Strings.sol": {
       "lastModificationDate": 1650421385664,
       "contentHash": "9c54c6c065d9e590fdcdd72c451425b9",
       "sourceName": "@openzeppelin/contracts/utils/Strings.sol",
@@ -229,7 +231,42 @@
         "Strings"
       ]
     },
-    "C:\\Users\\TFG5076XG\\git\\ERC1155_Polygon3\\node_modules\\@openzeppelin\\contracts\\token\\ERC1155\\IERC1155Receiver.sol": {
+    "C:\\Users\\TFG5076XG\\git\\ERC1155\\ERC1155_Polygon3\\contracts\\StringsAction.sol": {
+      "lastModificationDate": 1650430281273,
+      "contentHash": "a6e1dd8202e01d6ac76591827f523448",
+      "sourceName": "contracts/StringsAction.sol",
+      "solcConfig": {
+        "version": "0.8.1",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "StringsAction"
+      ]
+    },
+    "C:\\Users\\TFG5076XG\\git\\ERC1155\\ERC1155_Polygon3\\node_modules\\@openzeppelin\\contracts\\token\\ERC1155\\IERC1155Receiver.sol": {
       "lastModificationDate": 1650421385565,
       "contentHash": "9f8822b72fe2702979e40160cb6d9636",
       "sourceName": "@openzeppelin/contracts/token/ERC1155/IERC1155Receiver.sol",
@@ -266,7 +303,7 @@
         "IERC1155Receiver"
       ]
     },
-    "C:\\Users\\TFG5076XG\\git\\ERC1155_Polygon3\\node_modules\\@openzeppelin\\contracts\\utils\\Address.sol": {
+    "C:\\Users\\TFG5076XG\\git\\ERC1155\\ERC1155_Polygon3\\node_modules\\@openzeppelin\\contracts\\utils\\Address.sol": {
       "lastModificationDate": 1650421385409,
       "contentHash": "ad714a6368ee7d43cded6bbe8af0b155",
       "sourceName": "@openzeppelin/contracts/utils/Address.sol",
@@ -301,7 +338,7 @@
         "Address"
       ]
     },
-    "C:\\Users\\TFG5076XG\\git\\ERC1155_Polygon3\\node_modules\\@openzeppelin\\contracts\\utils\\Context.sol": {
+    "C:\\Users\\TFG5076XG\\git\\ERC1155\\ERC1155_Polygon3\\node_modules\\@openzeppelin\\contracts\\utils\\Context.sol": {
       "lastModificationDate": 1650421385418,
       "contentHash": "5f2c5c4b6af2dd4551027144797bc8be",
       "sourceName": "@openzeppelin/contracts/utils/Context.sol",
@@ -336,7 +373,7 @@
         "Context"
       ]
     },
-    "C:\\Users\\TFG5076XG\\git\\ERC1155_Polygon3\\node_modules\\@openzeppelin\\contracts\\utils\\introspection\\ERC165.sol": {
+    "C:\\Users\\TFG5076XG\\git\\ERC1155\\ERC1155_Polygon3\\node_modules\\@openzeppelin\\contracts\\utils\\introspection\\ERC165.sol": {
       "lastModificationDate": 1650421385458,
       "contentHash": "0e7db055ce108f9da7bb6686a00287c0",
       "sourceName": "@openzeppelin/contracts/utils/introspection/ERC165.sol",
@@ -373,7 +410,7 @@
         "ERC165"
       ]
     },
-    "C:\\Users\\TFG5076XG\\git\\ERC1155_Polygon3\\node_modules\\@openzeppelin\\contracts\\utils\\introspection\\IERC165.sol": {
+    "C:\\Users\\TFG5076XG\\git\\ERC1155\\ERC1155_Polygon3\\node_modules\\@openzeppelin\\contracts\\utils\\introspection\\IERC165.sol": {
       "lastModificationDate": 1650421385571,
       "contentHash": "03e6768535ac4da0e9756f1d8a4a018a",
       "sourceName": "@openzeppelin/contracts/utils/introspection/IERC165.sol",
@@ -408,10 +445,87 @@
         "IERC165"
       ]
     },
-    "C:\\Users\\TFG5076XG\\git\\ERC1155_Polygon3\\contracts\\StringsAction.sol": {
-      "lastModificationDate": 1650430281273,
-      "contentHash": "a6e1dd8202e01d6ac76591827f523448",
-      "sourceName": "contracts/StringsAction.sol",
+    "C:\\Users\\TFG5076XG\\git\\ERC1155\\ERC1155_Polygon3\\node_modules\\@openzeppelin\\contracts\\access\\Ownable.sol": {
+      "lastModificationDate": 1650421385629,
+      "contentHash": "8398972af73b4e9e5ff3b31cad86234f",
+      "sourceName": "@openzeppelin/contracts/access/Ownable.sol",
+      "solcConfig": {
+        "version": "0.8.1",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../utils/Context.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "Ownable"
+      ]
+    },
+    "C:\\Users\\TFG5076XG\\git\\ERC1155\\ERC1155_Polygon3\\node_modules\\@openzeppelin\\contracts\\access\\AccessControl.sol": {
+      "lastModificationDate": 1650421385407,
+      "contentHash": "76cae8e1eb9c27e818b0b08e1527f731",
+      "sourceName": "@openzeppelin/contracts/access/AccessControl.sol",
+      "solcConfig": {
+        "version": "0.8.1",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./IAccessControl.sol",
+        "../utils/Context.sol",
+        "../utils/Strings.sol",
+        "../utils/introspection/ERC165.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "AccessControl"
+      ]
+    },
+    "C:\\Users\\TFG5076XG\\git\\ERC1155\\ERC1155_Polygon3\\node_modules\\@openzeppelin\\contracts\\access\\IAccessControl.sol": {
+      "lastModificationDate": 1650421385533,
+      "contentHash": "57c84298234411cea19c7c284d86be8b",
+      "sourceName": "@openzeppelin/contracts/access/IAccessControl.sol",
       "solcConfig": {
         "version": "0.8.1",
         "settings": {
@@ -440,7 +554,7 @@
         "^0.8.0"
       ],
       "artifacts": [
-        "StringsAction"
+        "IAccessControl"
       ]
     }
   }

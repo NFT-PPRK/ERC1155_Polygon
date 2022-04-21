@@ -6,10 +6,11 @@ task("mint", "Mints from the NFT contract")
 .addParam("address", "The address to receive a token")
 .setAction(async function (taskArguments, hre) {
     const contract = await getContract("NFT", hre);
-    const transactionResponse = await contract.mintTo(taskArguments.address, {
-        gasLimit: 500_000,
-    });
-    console.log(`Transaction Hash: ${transactionResponse.hash}`);
+    // const transactionResponse = await contract.mintTo(taskArguments.address, {
+    //     gasLimit: 500_000,
+    // });
+    const transactionResponse = await contract.mintTo(taskArguments.address);
+    console.log(`Transaction Hash: ${JSON.stringify(transactionResponse)}`);
 });
 
 task("set-base-token-uri", "Sets the base token URI for the deployed smart contract")

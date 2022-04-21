@@ -6,15 +6,27 @@ import "@openzeppelin/contracts/token/ERC1155/IERC1155.sol";
 import "@openzeppelin/contracts/token/ERC1155/extensions/IERC1155MetadataURI.sol";
 import "@openzeppelin/contracts/utils/Counters.sol";
 import "@openzeppelin/contracts/utils/Strings.sol";
+import "@openzeppelin/contracts/access/Ownable.sol";
+import "@openzeppelin/contracts/access/AccessControl.sol";
+
+
 import "./StringsAction.sol";
 
-contract NFT is ERC1155 {
+
+contract NFT is ERC1155, Ownable, AccessControl {
     using Counters for Counters.Counter;
     Counters.Counter private currentTokenId;
 
+    string public name;
+    string public symbol;
     string public baseTokenURI;
     
-    constructor() ERC1155(baseTokenURI) {}
+    //constructor(string memory _name, string memory _symbol) ERC1155(baseTokenURI) {
+    constructor() ERC1155("https://bafybeiba5fkxspnln7lvqaj32ufzftu3zbrhonapdygxycbnr4pu2lo4vi.ipfs.dweb.link/metadata/{id}") {
+
+        // name = _name;
+        // symbol = _symbol;
+    }
     
     function mintTo(address recipient)
         public
@@ -26,12 +38,21 @@ contract NFT is ERC1155 {
         return newItemId;
     }
 
-    function setBaseTokenURI(string memory _baseTokenURI) public {
-        baseTokenURI = _baseTokenURI;
-        _setURI(_baseTokenURI);
-    }
+    // function setBaseTokenURI(string memory _baseTokenURI) public onlyOwner {
+    //     baseTokenURI = StringsAction.strConcat(_baseTokenURI, "{id}");
+    //     _setURI(_baseTokenURI);
+    // }
 
     function tokenUri(uint256 _id) public view returns (string memory) {
         return StringsAction.strConcat(baseTokenURI, Strings.toString(_id));
     }
+
+
+    function supportsInterface(bytes4 interfaceId) public view virtual override(ERC1155, AccessControl) returns (bool) {
+        return super.supportsInterface(interfaceId);
+    }
+
+    // function name() internal view returns (string memory) {
+    //     return "polygon erc115
+    // }
 }
