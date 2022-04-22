@@ -22,7 +22,7 @@ contract NFT is ERC1155 {
     {
         currentTokenId.increment();
         uint256 newItemId = currentTokenId.current();
-        _mint(recipient, newItemId, 10, " ");
+        _mint(recipient, newItemId, 5, " ");
         return newItemId;
     }
 

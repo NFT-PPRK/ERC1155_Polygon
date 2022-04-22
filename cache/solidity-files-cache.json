@@ -1,9 +1,9 @@
 {
   "_format": "hh-sol-cache-2",
   "files": {
-    "C:\\Users\\TFG5076XG\\git\\ERC1155_Polygon3\\contracts\\NFT.sol": {
-      "lastModificationDate": 1650430313257,
-      "contentHash": "3eeab78411f0142c0f2150d48a1706db",
+    "/Users/cacahuete/git/NFT-PPRK/ERC1155_Polygon/contracts/NFT.sol": {
+      "lastModificationDate": 1650505706267,
+      "contentHash": "7eb0c59c99a73ecca7dce83607dffd9b",
       "sourceName": "contracts/NFT.sol",
       "solcConfig": {
         "version": "0.8.1",
@@ -43,8 +43,8 @@
         "NFT"
       ]
     },
-    "C:\\Users\\TFG5076XG\\git\\ERC1155_Polygon3\\node_modules\\@openzeppelin\\contracts\\token\\ERC1155\\ERC1155.sol": {
-      "lastModificationDate": 1650421385431,
+    "/Users/cacahuete/git/NFT-PPRK/ERC1155_Polygon/node_modules/@openzeppelin/contracts/token/ERC1155/ERC1155.sol": {
+      "lastModificationDate": 1650440692121,
       "contentHash": "1d68a32647e54f6acd6ff471d940ef4c",
       "sourceName": "@openzeppelin/contracts/token/ERC1155/ERC1155.sol",
       "solcConfig": {
@@ -85,8 +85,8 @@
         "ERC1155"
       ]
     },
-    "C:\\Users\\TFG5076XG\\git\\ERC1155_Polygon3\\node_modules\\@openzeppelin\\contracts\\token\\ERC1155\\IERC1155.sol": {
-      "lastModificationDate": 1650421385561,
+    "/Users/cacahuete/git/NFT-PPRK/ERC1155_Polygon/node_modules/@openzeppelin/contracts/token/ERC1155/IERC1155.sol": {
+      "lastModificationDate": 1650440692159,
       "contentHash": "59e1bc5713fdebc7f821dc52f4d3e0ef",
       "sourceName": "@openzeppelin/contracts/token/ERC1155/IERC1155.sol",
       "solcConfig": {
@@ -122,8 +122,8 @@
         "IERC1155"
       ]
     },
-    "C:\\Users\\TFG5076XG\\git\\ERC1155_Polygon3\\node_modules\\@openzeppelin\\contracts\\token\\ERC1155\\extensions\\IERC1155MetadataURI.sol": {
-      "lastModificationDate": 1650421385563,
+    "/Users/cacahuete/git/NFT-PPRK/ERC1155_Polygon/node_modules/@openzeppelin/contracts/token/ERC1155/extensions/IERC1155MetadataURI.sol": {
+      "lastModificationDate": 1650440692160,
       "contentHash": "9148c2e10c4efb12c71a7f080da5559b",
       "sourceName": "@openzeppelin/contracts/token/ERC1155/extensions/IERC1155MetadataURI.sol",
       "solcConfig": {
@@ -159,8 +159,8 @@
         "IERC1155MetadataURI"
       ]
     },
-    "C:\\Users\\TFG5076XG\\git\\ERC1155_Polygon3\\node_modules\\@openzeppelin\\contracts\\utils\\Counters.sol": {
-      "lastModificationDate": 1650421385419,
+    "/Users/cacahuete/git/NFT-PPRK/ERC1155_Polygon/node_modules/@openzeppelin/contracts/utils/Counters.sol": {
+      "lastModificationDate": 1650440692111,
       "contentHash": "74654e3ae5d7f39555055dfe244dab7a",
       "sourceName": "@openzeppelin/contracts/utils/Counters.sol",
       "solcConfig": {
@@ -194,8 +194,8 @@
         "Counters"
       ]
     },
-    "C:\\Users\\TFG5076XG\\git\\ERC1155_Polygon3\\node_modules\\@openzeppelin\\contracts\\utils\\Strings.sol": {
-      "lastModificationDate": 1650421385664,
+    "/Users/cacahuete/git/NFT-PPRK/ERC1155_Polygon/node_modules/@openzeppelin/contracts/utils/Strings.sol": {
+      "lastModificationDate": 1650440692186,
       "contentHash": "9c54c6c065d9e590fdcdd72c451425b9",
       "sourceName": "@openzeppelin/contracts/utils/Strings.sol",
       "solcConfig": {
@@ -229,8 +229,43 @@
         "Strings"
       ]
     },
-    "C:\\Users\\TFG5076XG\\git\\ERC1155_Polygon3\\node_modules\\@openzeppelin\\contracts\\token\\ERC1155\\IERC1155Receiver.sol": {
-      "lastModificationDate": 1650421385565,
+    "/Users/cacahuete/git/NFT-PPRK/ERC1155_Polygon/contracts/StringsAction.sol": {
+      "lastModificationDate": 1650440642448,
+      "contentHash": "18b0d271fe5e0c27caa561241f416dd3",
+      "sourceName": "contracts/StringsAction.sol",
+      "solcConfig": {
+        "version": "0.8.1",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "StringsAction"
+      ]
+    },
+    "/Users/cacahuete/git/NFT-PPRK/ERC1155_Polygon/node_modules/@openzeppelin/contracts/token/ERC1155/IERC1155Receiver.sol": {
+      "lastModificationDate": 1650440692161,
       "contentHash": "9f8822b72fe2702979e40160cb6d9636",
       "sourceName": "@openzeppelin/contracts/token/ERC1155/IERC1155Receiver.sol",
       "solcConfig": {
@@ -266,8 +301,8 @@
         "IERC1155Receiver"
       ]
     },
-    "C:\\Users\\TFG5076XG\\git\\ERC1155_Polygon3\\node_modules\\@openzeppelin\\contracts\\utils\\Address.sol": {
-      "lastModificationDate": 1650421385409,
+    "/Users/cacahuete/git/NFT-PPRK/ERC1155_Polygon/node_modules/@openzeppelin/contracts/utils/Address.sol": {
+      "lastModificationDate": 1650440692085,
       "contentHash": "ad714a6368ee7d43cded6bbe8af0b155",
       "sourceName": "@openzeppelin/contracts/utils/Address.sol",
       "solcConfig": {
@@ -301,8 +336,8 @@
         "Address"
       ]
     },
-    "C:\\Users\\TFG5076XG\\git\\ERC1155_Polygon3\\node_modules\\@openzeppelin\\contracts\\utils\\Context.sol": {
-      "lastModificationDate": 1650421385418,
+    "/Users/cacahuete/git/NFT-PPRK/ERC1155_Polygon/node_modules/@openzeppelin/contracts/utils/Context.sol": {
+      "lastModificationDate": 1650440692111,
       "contentHash": "5f2c5c4b6af2dd4551027144797bc8be",
       "sourceName": "@openzeppelin/contracts/utils/Context.sol",
       "solcConfig": {
@@ -336,8 +371,8 @@
         "Context"
       ]
     },
-    "C:\\Users\\TFG5076XG\\git\\ERC1155_Polygon3\\node_modules\\@openzeppelin\\contracts\\utils\\introspection\\ERC165.sol": {
-      "lastModificationDate": 1650421385458,
+    "/Users/cacahuete/git/NFT-PPRK/ERC1155_Polygon/node_modules/@openzeppelin/contracts/utils/introspection/ERC165.sol": {
+      "lastModificationDate": 1650440692127,
       "contentHash": "0e7db055ce108f9da7bb6686a00287c0",
       "sourceName": "@openzeppelin/contracts/utils/introspection/ERC165.sol",
       "solcConfig": {
@@ -373,8 +408,8 @@
         "ERC165"
       ]
     },
-    "C:\\Users\\TFG5076XG\\git\\ERC1155_Polygon3\\node_modules\\@openzeppelin\\contracts\\utils\\introspection\\IERC165.sol": {
-      "lastModificationDate": 1650421385571,
+    "/Users/cacahuete/git/NFT-PPRK/ERC1155_Polygon/node_modules/@openzeppelin/contracts/utils/introspection/IERC165.sol": {
+      "lastModificationDate": 1650440692163,
       "contentHash": "03e6768535ac4da0e9756f1d8a4a018a",
       "sourceName": "@openzeppelin/contracts/utils/introspection/IERC165.sol",
       "solcConfig": {
@@ -406,41 +441,6 @@
       ],
       "artifacts": [
         "IERC165"
-      ]
-    },
-    "C:\\Users\\TFG5076XG\\git\\ERC1155_Polygon3\\contracts\\StringsAction.sol": {
-      "lastModificationDate": 1650430281273,
-      "contentHash": "a6e1dd8202e01d6ac76591827f523448",
-      "sourceName": "contracts/StringsAction.sol",
-      "solcConfig": {
-        "version": "0.8.1",
-        "settings": {
-          "optimizer": {
-            "enabled": false,
-            "runs": 200
-          },
-          "outputSelection": {
-            "*": {
-              "*": [
-                "abi",
-                "evm.bytecode",
-                "evm.deployedBytecode",
-                "evm.methodIdentifiers",
-                "metadata"
-              ],
-              "": [
-                "ast"
-              ]
-            }
-          }
-        }
-      },
-      "imports": [],
-      "versionPragmas": [
-        "^0.8.0"
-      ],
-      "artifacts": [
-        "StringsAction"
       ]
     }
   }
