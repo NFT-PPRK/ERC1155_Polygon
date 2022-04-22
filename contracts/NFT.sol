@@ -6,6 +6,7 @@ import "@openzeppelin/contracts/token/ERC1155/IERC1155.sol";
 import "@openzeppelin/contracts/token/ERC1155/extensions/IERC1155MetadataURI.sol";
 import "@openzeppelin/contracts/utils/Counters.sol";
 import "@openzeppelin/contracts/utils/Strings.sol";
+<<<<<<< HEAD
 import "@openzeppelin/contracts/access/Ownable.sol";
 import "@openzeppelin/contracts/access/AccessControl.sol";
 
@@ -28,6 +29,17 @@ contract NFT is ERC1155, Ownable, AccessControl {
         name = "NFT Tutorial";
         symbol = "NFT";
     }
+=======
+import "./StringsAction.sol";
+
+contract NFT is ERC1155 {
+    using Counters for Counters.Counter;
+    Counters.Counter private currentTokenId;
+
+    string public baseTokenURI;
+    
+    constructor() ERC1155(baseTokenURI) {}
+>>>>>>> 2818b682c3fcbf89c35d9c572bcdcd6ecfe2d8f5
     
     function mintTo(address recipient)
         public
@@ -36,6 +48,7 @@ contract NFT is ERC1155, Ownable, AccessControl {
         currentTokenId.increment();
         uint256 newItemId = currentTokenId.current();
         _mint(recipient, newItemId, 10, " ");
+<<<<<<< HEAD
         // tokenSupply[newItemId] = 10;
         return newItemId;
     }
@@ -48,10 +61,20 @@ contract NFT is ERC1155, Ownable, AccessControl {
     // function totalSupply(uint256 _id) public view returns (uint256) {
     //     return tokenSupply[_id];
     // }
+=======
+        return newItemId;
+    }
+
+    function setBaseTokenURI(string memory _baseTokenURI) public {
+        baseTokenURI = _baseTokenURI;
+        _setURI(_baseTokenURI);
+    }
+>>>>>>> 2818b682c3fcbf89c35d9c572bcdcd6ecfe2d8f5
 
     function tokenUri(uint256 _id) public view returns (string memory) {
         return StringsAction.strConcat(baseTokenURI, Strings.toString(_id));
     }
+<<<<<<< HEAD
 
 
     function supportsInterface(bytes4 interfaceId) public view virtual override(ERC1155, AccessControl) returns (bool) {
@@ -61,4 +84,6 @@ contract NFT is ERC1155, Ownable, AccessControl {
     // function name() internal view returns (string memory) {
     //     return "polygon erc115
     // }
+=======
+>>>>>>> 2818b682c3fcbf89c35d9c572bcdcd6ecfe2d8f5
 }
