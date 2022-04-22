@@ -20,12 +20,13 @@ contract NFT is ERC1155, Ownable, AccessControl {
     string public name;
     string public symbol;
     string public baseTokenURI;
+    // mapping (uint256 => uint256) public tokenSupply;
     
     //constructor(string memory _name, string memory _symbol) ERC1155(baseTokenURI) {
-    constructor() ERC1155("https://bafybeiba5fkxspnln7lvqaj32ufzftu3zbrhonapdygxycbnr4pu2lo4vi.ipfs.dweb.link/metadata/{id}") {
+    constructor() ERC1155("https://bafybeihh4rqyaxz2tcosxgrvn2zqx7ip6osnj62gor6fugiiaswjy7stxi.ipfs.nftstorage.link/metadata/{id}") {
 
-        // name = _name;
-        // symbol = _symbol;
+        name = "NFT Tutorial";
+        symbol = "NFT";
     }
     
     function mintTo(address recipient)
@@ -35,12 +36,17 @@ contract NFT is ERC1155, Ownable, AccessControl {
         currentTokenId.increment();
         uint256 newItemId = currentTokenId.current();
         _mint(recipient, newItemId, 10, " ");
+        // tokenSupply[newItemId] = 10;
         return newItemId;
     }
 
     // function setBaseTokenURI(string memory _baseTokenURI) public onlyOwner {
     //     baseTokenURI = StringsAction.strConcat(_baseTokenURI, "{id}");
     //     _setURI(_baseTokenURI);
+    // }
+
+    // function totalSupply(uint256 _id) public view returns (uint256) {
+    //     return tokenSupply[_id];
     // }
 
     function tokenUri(uint256 _id) public view returns (string memory) {

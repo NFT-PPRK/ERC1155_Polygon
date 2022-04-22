@@ -2,6 +2,14 @@ const { task } = require("hardhat/config");
 const { getContract } = require("./helpers");
 const fetch = require("node-fetch");
 
+// task("quantity", "Token quantity")
+// .addParam("address", "The address to check token quantity")
+// .setAction(async function(taskArguments, hre) {
+//     const contract = await getContract("NFT", hre);
+//     const transactionResponse = await contract.totalSupply(taskArguments.address);
+//     console.log(`Address Token Quantity:${transactionResponse}`)
+// })
+
 task("mint", "Mints from the NFT contract")
 .addParam("address", "The address to receive a token")
 .setAction(async function (taskArguments, hre) {

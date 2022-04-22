@@ -2,8 +2,8 @@
   "_format": "hh-sol-cache-2",
   "files": {
     "C:\\Users\\TFG5076XG\\git\\ERC1155\\ERC1155_Polygon3\\contracts\\NFT.sol": {
-      "lastModificationDate": 1650521161998,
-      "contentHash": "daaf9ea8f6aa9bb40dfcb8106a887545",
+      "lastModificationDate": 1650606381115,
+      "contentHash": "1d77b3dc80c68933149e5b5618c3979c",
       "sourceName": "contracts/NFT.sol",
       "solcConfig": {
         "version": "0.8.1",
